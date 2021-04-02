@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Two Go Two</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/logo.jpeg">
+        <style>
+        @import url(design.css);
+        </style>
+    </head>
+    <body>
+      <header>
+        <div class="headbar">
+            <a href="index.html"><img src="images/logo.jpeg" alt="TwoGoTwo's Logo" width="150" height="130"></a>
+            <h1 class="paymenth1">Payment</h1>
+          </div>
+        
+    </header>
+   
+    <form action="cart.html" method="GET">
+      <input type="submit" class="paymentbackbtn" value="Back">
+      </form>
+      
+      <form action="index.html" method="GET">
+        <div class="row">
+            <div class="col-50">
+              <h2>Billing Address</h2>
+              <label for="fname"><i class="fa fa-user"></i> Full Name: </label>
+              <input type="text" id="fname" name="firstname" placeholder="Jessica Junior Zhang" required autofocus>
+              <br><br>
+              <label for="email"><i class="fa fa-envelope" ></i> Email:</label>
+              <input type="email" id="email" name="email" placeholder="jessica@example.com" required>
+              <br><br>
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address: </label>
+              <input type="text" id="adr" name="address" placeholder="1,Jalan ABC" required>
+              <br><br>
+              <label for="city"><i class="fa fa-institution"></i> City: </label>
+              <input type="text" id="city" name="city" placeholder="Taman City" required>
+              <br><br>
+              <label for="state">State: </label>
+              <input type="text" id="state" name="state" placeholder="Kuala Lumpur" required>
+              <br><br>
+              <label for="postalcode">Postal Code: </label>
+              <input type="text" id="postalcode" name="postalcode" placeholder="52000" required>
+            </div>
+          
+          <div class="col-51">
+            <h3>Payment Methods</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-picture">
+              <img src= "images/visa.jpeg" alt= "VISA" style="width:50px;height:50px;">
+              <img src= "images/mastercard.jpeg" alt= "MASTERCARD" style="width:50px;height:40px;">
+            </div>
+            <label for="cname"><br><br>Name on Card<br></label>
+            <input type="text" id="cname" name="cardname" placeholder="Jessica Junior Zhang" required>
+           
+            <label for="ccnum"><br><br>Credit/ Debit card number<br></label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+           
+            <label for="expmonth"><br><br>Exp Month<br></label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="November" required>
+
+            <label for="expyear"><br><br>Exp Year<br></label>
+            <input type="text" id="expyear" name="expyear" placeholder="2025" required>
+          
+            <label for="cvv"><br><br>CVV<br></label>
+            <input type="text" id="cvv" name="cvv" placeholder="112" required>
+          </div>
+        </div>
+
+        <div class="ship">
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"  required> Shipping address same as billing
+          </label>
+          <br>
+          <input type="submit" value="Continue" class="paymentcontbtn">
+          </div>
+        
+    </form>
+
+    <footer>
+      <div class="bottomNav">
+      <a href="terms.html" >Terms</a>
+      <a href="contact.html" >Contact</a>
+      <a href="about.html" >About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="faqs.html">FAQs</a>
+      <br>
+       &copy; 2021 Two Go Two. All Right Reserved.
+      </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Two Go Two</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="design.css">
+        <link rel="icon" href="images/logo.jpeg">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="headbar">
+                <a href="index.html"><img src="images/logo.jpeg" alt="TwoGoTwo's Logo" width="150" height="130"></a>
+            </div>
+            <h1 class="signinh1"> SignIn</h1>
+        </header>
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type="button" onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id="login" class="input-group-login" action="home.html" method="GET">
+                    <input type="text" class="input-field" placeholder='Email Id' required autofocus>
+            <input type="password" class="input-field" placeholder='Enter Password' required>
+            <input type="checkbox" class="check-box">
+            <span>Remember Password</span> 
+           <input type="submit" class="submit-btn" value="Log In">
+         </form>
+         <form id="register" class="input-group-register" action="home.html" method="GET">
+             <input type="text" class="input-field" placeholder='First Name' required>
+             <input type="text" class="input-field" placeholder='Last Name ' required>
+             <input type="email" class="input-field" placeholder='Email Id' required>
+             <input type="password" class="input-field" placeholder='Enter Password' required>
+             <input type="password" class="input-field" placeholder='Confirm Password'  required>
+             <input type="checkbox" class="check-box">
+             <span>I agree to the terms and conditions</span>    
+             <input type="submit" class="submit-btn" value="Register">
+             </form>
+            </div>
+        </div>
+        <script>
+        var x=document.getElementById('login');
+        var y=document.getElementById('register');
+        var z=document.getElementById('btn');
+        function register()
+        {
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px';
+        }
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+        }
+        
+        </script>
+         <footer>
+            <div class="bottomNav">
+            <a href="terms.html" >Terms</a>
+            <a href="contact.html" >Contact</a>
+            <a href="about.html" >About</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="faqs.html">FAQs</a>
+            
+             &copy; 2021 Two Go Two. All Right Reserved.
+            </div>
+        </footer>
+        
+    </body>
+   
+</html>
